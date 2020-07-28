@@ -1,0 +1,25 @@
+[package]
+name = "svd2hal"
+version = "0.0.1"
+authors = ["Alexander Huymayer <alex@peiran.de>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "svd2hal"
+path = "src/main.rs"
+
+[dependencies]
+treexml = "0.7"
+itertools = "0.9.0"
+regex = "1"
+serde = "1.*"
+serde_derive = "1.*"
+serde_regex = "0.*"
+serde_yaml = "0.*"
+serde_json = "1.0.53"
+patch-svd = {path="../patch-svd"}
+tera = "1.*"
+lazy_static = "1.4.0"
+Inflector = "0.11.4"
